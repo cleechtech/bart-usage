@@ -1,0 +1,26 @@
+{
+  "name": "bart-usage",
+  "version": "1.0.0",
+  "description": "bart enter and exit data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jasonshark/bart-usage"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonshark/bart-usage/issues"
+  },
+  "homepage": "https://github.com/jasonshark/bart-usage",
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "cors": "^2.4.2",
+    "express": "^4.9.7",
+    "lodash": "^2.4.1"
+  }
+}

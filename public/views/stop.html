@@ -1,0 +1,19 @@
+<h3 class='text-center'>{{ stopName }}</h3>
+
+<div class='row text-center'>
+	<h4>BART usage at {{ stopName }} by day</h4>
+	<chart value="usageByDay"></chart>
+</div>
+
+<div class='row'>
+	<div class='col-md-5'>
+		<h4>Entries</h4>
+
+		<pre>{{ localEntries | json }}</pre>
+	</div>
+	<div class='col-md-5'>
+		<h4>Exits</h4>
+
+		<pre>{{ localExits | json }}</pre>
+	</div>
+</div>
