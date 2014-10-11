@@ -1,6 +1,12 @@
-
-<ul>
-	<li ng-repeat='stop in BARTStops'>
-		<a ng-href='#/stop/{{stop}}'>{{ stop }}</a>
-	</li>
-</ul>
+<div class='row'>
+	<div class='col-md-2'>
+		<ul>
+			<li ng-repeat='stop in BARTStops'>
+				<a ui-sref='stop({ stopName: stop })'>{{ stop }}</a>
+			</li>
+		</ul>
+	</div>
+	<div class='col-md-10'>
+		<div ui-view></div>
+	</div>
+</div>

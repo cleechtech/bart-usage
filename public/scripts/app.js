@@ -14,7 +14,8 @@ app.config(function($stateProvider, $urlRouterProvider){
           templateUrl: 'views/home.html'
       })
       .state('stop', {
-        url: '/stop/:stopName',
+        parent: 'home',
+        url: 'stop/:stopName',
         controller: 'StopCtrl',
         templateUrl: 'views/stop.html'
       })
