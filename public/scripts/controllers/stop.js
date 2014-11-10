@@ -1,6 +1,7 @@
 'use strict';
 
 app.controller('StopCtrl', function($scope, $stateParams, $http, $rootScope){
+	$scope.$parent.welcomeMessage = false;
 
 	var stopName = $stateParams.stopName;
 
